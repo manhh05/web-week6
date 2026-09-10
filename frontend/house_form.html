@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>House Price Prediction</h2>
+
+    <form id="predictionForm">
+    <div class="form-group">
+        <label for="area">Area:</label>
+        <input type="number" id="area" step="any" required placeholder="Eg: 80">
+    </div>
+
+    <div class="form-group">
+        <label for="bedrooms">Bedrooms:</label>
+        <input type="number" id="bedrooms" min="1" step="1" required placeholder="Eg: 3">
+    </div>
+
+    <div class="form-group">
+        <label for="location">Location:</label>
+        <select id="location">
+        <option value="hanoi">Ha Noi</option>
+        <option value="hcmc">Ho Chi Minh</option>
+        <option value="other">Other</option>
+        </select>
+    </div>
+
+    <button type="submit" id="submitBtn">Predict Price</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

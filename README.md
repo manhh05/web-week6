@@ -22,7 +22,7 @@ uvicorn main:app --reload
 
 - Because area is declared as a required parameter without any default value. FastAPI performs automatic schema validation; omitting a required parameter fails validation and returns an HTTP 422 Unprocessable Entity status code detailing the missing field
 
-## 3. Task 3 Questions & Explanations
+## 3. Task 5 Questions & Explanations
 
 1. Why does a relative URL (/predict) work in fetch()?
 
